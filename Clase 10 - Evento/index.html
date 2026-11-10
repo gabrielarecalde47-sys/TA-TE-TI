@@ -1,31 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuadrado</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tateti</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-    <div class="contenedor-juego">
-        <h1>Ta-Te-Ti</h1>
+<body>
 
-        <div class="tablero">
-            <div class="cuadrado" data-index="0"></div>
-            <div class="cuadrado" data-index="1"></div>
-            <div class="cuadrado" data-index="2"></div>
-            <div class="cuadrado" data-index="3"></div>
-            <div class="cuadrado" data-index="4"></div>
-            <div class="cuadrado" data-index="5"></div>
-            <div class="cuadrado" data-index="6"></div>
-            <div class="cuadrado" data-index="7"></div>
-            <div class="cuadrado" data-index="8"></div>
-        </div>
+  <div class="contenedor-juego">
+    <h1>Tateti</h1>
+    <div id="info-partida">Partidas: <span id="contadorPartidas">1</span> | Puntos - X: <span id="puntosX">0</span> | O: <span id="puntosO">0</span></div>
 
-       
-        <div id="mensaje" class="mensaje">Turno de: X</div>
+    <div class="tablero" id="tablero">
+      <div class="cuadrado"></div>
+      <div class="cuadrado"></div>
+      <div class="cuadrado"></div>
+      <div class="cuadrado"></div>
+      <div class="cuadrado"></div>
+      <div class="cuadrado"></div>
+      <div class="cuadrado"></div>
+      <div class="cuadrado"></div>
+      <div class="cuadrado"></div>
     </div>
 
-    <script src="main.js"></script>
+    <p class="mensaje" id="mensaje">Turno de: X</p>
+    
+    <div class="contenedor-botones">
+      <button class="btn" id="reiniciar">Reiniciar</button>
+      <button class="btn" id="deshacer">Deshacer</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
